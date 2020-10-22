@@ -1,0 +1,15 @@
+{ "columns":24,
+ "image":"..\/..\/..\/..\/Desktop\/GameAssets\/KenneyMedievalPlatformer\/Tilesheet\/medieval_tilesheet.png",
+ "imageheight":980,
+ "imagewidth":1680,
+ "margin":0,
+ "name":"Kenney Medieval",
+ "spacing":0,
+ "tilecount":336,
+ "tiledversion":"1.3.1",
+ "tileheight":70,
+ "tilewidth":70,
+ "transparentcolor":"#ff00ff",
+ "type":"tileset",
+ "version":1.2
+}

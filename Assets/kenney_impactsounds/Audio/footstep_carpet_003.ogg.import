@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/footstep_carpet_003.ogg-1fb5c116411f6e88129340cd16e89bb7.oggstr"
+
+[deps]
+
+source_file="res://Assets/kenney_impactsounds/Audio/footstep_carpet_003.ogg"
+dest_files=[ "res://.import/footstep_carpet_003.ogg-1fb5c116411f6e88129340cd16e89bb7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
