@@ -1,0 +1,25 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 2.48016
+margin_top = 1.08727
+margin_right = 91.4802
+margin_bottom = 68.0873
+rect_scale = Vector2( 2, 2 )
+text = "GAME OVER
+
+To Restart: 
+Press Any key"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Resource",
+"class": "PlaneSprites",
+"language": "GDScript",
+"path": "res://Scripts/PlaneSprites.gd"
+} ]
 _global_script_class_icons={
-
+"PlaneSprites": ""
 }
 
 [application]
@@ -19,11 +24,16 @@ config/name="Plane de Paper"
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Signals="*res://Scripts/Signals.gd"
+
 [display]
 
 window/size/width=560
 window/size/height=700
 window/size/resizable=false
+window/handheld/orientation="portrait"
 
 [input]
 
