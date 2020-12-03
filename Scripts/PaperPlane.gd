@@ -40,23 +40,23 @@ func _input_handler():
 		_change_orientation(false)
 
 func _bounds_hit():
-	orientation = 0
 	if position.x < 0:
 		position.x = 0
 	if position.x > 560:
 		position.x = 560
+	orientation = 0
+	xvel = orientation * basevel
 	_change_sprite()
 	Signals.emit_signal("orientation_changed", orientation)
 
 func _change_orientation(changeleft : bool):
 	if changeleft:
-		if orientation > -2:
+		if orientation > -3:
 			orientation -= 1
-			Signals.emit_signal("orientation_changed", orientation)
 	else:
-		if orientation < 2:
+		if orientation < 3:
 			orientation += 1
-			Signals.emit_signal("orientation_changed", orientation)
+	Signals.emit_signal("orientation_changed", orientation)
 	_change_sprite()
 	xvel = orientation * basevel
 	#print_debug("X velocity: " + String(xvel) + "  Orientation: " + String(orientation))
@@ -72,8 +72,10 @@ func _change_sprite():
 	if orientation == 0:
 		current_sprite.set_texture(planesprites.ninety)
 	elif abs(orientation) == 1:
-		current_sprite.set_texture(planesprites.forty_five)
+		current_sprite.set_texture(planesprites.sixty)
 	elif abs(orientation) == 2:
+		current_sprite.set_texture(planesprites.forty_five)
+	elif abs(orientation) == 3:
 		current_sprite.set_texture(planesprites.zero)
 
 func _game_over_man():

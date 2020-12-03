@@ -9,13 +9,25 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node2D",
+"class": "LevelBlock",
+"language": "GDScript",
+"path": "res://Scripts/LevelBlock.gd"
+}, {
 "base": "Resource",
 "class": "PlaneSprites",
 "language": "GDScript",
 "path": "res://Scripts/PlaneSprites.gd"
+}, {
+"base": "Area2D",
+"class": "ScoreTrigger",
+"language": "GDScript",
+"path": "res://Scenes/ScoreTrigger.gd"
 } ]
 _global_script_class_icons={
-"PlaneSprites": ""
+"LevelBlock": "",
+"PlaneSprites": "",
+"ScoreTrigger": ""
 }
 
 [application]

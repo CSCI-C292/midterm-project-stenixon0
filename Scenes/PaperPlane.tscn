@@ -7,21 +7,23 @@
 [ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 13.3036
-height = 39.1303
+radius = 12.0
+height = 40.0
 
 [node name="PaperPlane" type="Node2D"]
-position = Vector2( 280, 60 )
+position = Vector2( 280, 120 )
+scale = Vector2( 0.75, 0.75 )
 script = ExtResource( 2 )
 planesprites = ExtResource( 4 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
+offset = Vector2( -2.4, 0 )
 
 [node name="CollisionArea" type="Area2D" parent="."]
 script = ExtResource( 3 )
 fail_text = ExtResource( 5 )
 
 [node name="CollisionShape" type="CollisionShape2D" parent="CollisionArea"]
-position = Vector2( 0, -0.594604 )
+position = Vector2( 0.264893, -0.594604 )
 shape = SubResource( 1 )
