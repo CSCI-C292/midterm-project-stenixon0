@@ -28,7 +28,7 @@ func _ready():
 	#35 per tile
 	#1400 effective space
 	#40 available spaces
-	for ypos in range(2, 38, 8):
+	for ypos in range(10, 38, 8):
 		#add score trigger
 		#TODO:
 #		#remove score_trigger instance and implement custom tile with area2D 
